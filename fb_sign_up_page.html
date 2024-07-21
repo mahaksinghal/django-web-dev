@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .container {
+            /* margin: 20px; */
+            background-color: azure;
+            /* border: 2px solid black; */
+            height: 90vh;
+            display: flex; 
+            flex-direction: column;
+            /* justify-content: center; */
+            
+        }
+        
+        .header {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: right;
+            /* align-items: center; */
+            margin-left: 500px;
+        }
+        
+        .card {
+            height: 500px;
+            width: 45%;
+            /* border: 2px solid black; */
+            margin-right: 30px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+
+        .head {
+            margin-top: 10px;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .head1 {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input {
+            /* width: 100%; */
+            /* box-sizing: border-box; */
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 200px;
+            height: 32px;
+        }
+
+        .input_1 {
+            width: 98%;
+            /* box-sizing: border-box; */
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .birthday,
+        .gen {
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gen {
+            font-weight: bold;
+        }
+
+        .color {
+            color: gray;
+        }
+
+        .terms {
+            color: gray;
+            margin-top: 10px;
+        }
+
+        .btn {
+            height: 30px;
+            width: 150px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(63, 160, 63);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="login"></div>
+    <div class="container">
+        <div class="header">
+            <div class="card">
+
+                <h1 class="head">Create an account</h1>
+                <p class="head1">It's quick and easy</p>
+
+                <form>
+
+                    <input class="input" type="text" placeholder="First Name">
+                    <input class="input" type="text" placeholder="Surname"><br>
+
+                    <input class="input_1" type="number" placeholder="Mobile Number"><br>
+                    <input class="input_1" type="password" placeholder="New password"><br>
+
+                    <label class="color">Birthday</label><br>
+                    <input type="date" class="birthday"><br>
+
+                    <label class="color">Gender</label><br>
+                    <input name="gender" type="radio"><span class="gen">Female</span>
+                    <input name="gender" type="radio"><span class="gen">Male</span>
+                    <input name="gender" type="radio"><span class="gen">Custom</span>
+                    <br>
+
+                    <p class="terms">
+                        By clicking SignUp, you agree to our Terms, Data policy and Cookie Policy. You ay reveive SMS
+                        notification from us and can opt out at any time.
+                    </p><br>
+                    <button class="btn" type="button">Sign Up</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
