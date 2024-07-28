@@ -31,3 +31,12 @@ car.pop()
 car.shift()
 console.log(car);
 
+// slicing
+console.log(car.slice(1, 7));
+console.log(car.slice(-4, -2));
+
+// splicing
+car.splice(1, 2, 'audi', 'ferrari')
+console.log(car);
+car.splice(3,2)
+console.log(car);

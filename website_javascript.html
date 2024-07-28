@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Using Javascript</title>
+</head>
+
+<body>
+    <h1>Hi There</h1>
+    <p id="first">My first Javascript program</p>
+    <p id="para">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Change</button>
+    <script>
+        document.getElementById('first').style.color = 'red'
+        document.getElementById('first').style.fontSize = "20px"
+        document.getElementById("first").innerHTML = "hello"
+
+        function myFunction() {
+            document.getElementById("para").innerHTML = "the changed paragraph"
+            alert('para changed')
+        }
+
+    </script>
+</body>
+
+</html>
